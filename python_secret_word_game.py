@@ -33,7 +33,8 @@ while i<7:
             new_letter = list(display_mock)
             new_letter[index] = j
             display_mock = ''.join([ str(elem) for elem in new_letter])
-         
+        else:
+            print("This letter is not in the word") 
         index = index+2
         
     

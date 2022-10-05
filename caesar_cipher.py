@@ -17,7 +17,7 @@ cipher_message = []
 for i in secret_message:
     new_index = letters_list.find(i)
     if new_index == -1:
-        cipher_message = cipher_message+[" "]
+        cipher_message = cipher_message+[i]
     else:
         cipher_message = cipher_message + [cipher_letters[new_index]]
 
@@ -27,7 +27,7 @@ decipher_message=[]
 for i in cipher_message:
     new_index = cipher_letters.find(i)
     if new_index == -1:
-        decipher_message = decipher_message+[" "]
+        decipher_message = decipher_message+[i]
     else:
         decipher_message = decipher_message + [letters_list[new_index]]
 
