@@ -1,8 +1,10 @@
+from pydoc import importfile
 from random import randint
+from os import system
 
 # will generate word and make the user guess the letters of that word
 #The user only knows how many letters in the word
-
+system('clear')
 dictionary = ['stream', 'programming', 'title', 'moon','fishhook', 'night', 'python' , 'javascript', 'table']
 # Random pick from a list
 pic_a_word = dictionary[randint(0, len(dictionary)-1)]
@@ -33,8 +35,8 @@ while i<7:
             new_letter = list(display_mock)
             new_letter[index] = j
             display_mock = ''.join([ str(elem) for elem in new_letter])
-        else:
-            print("This letter is not in the word") 
+        # else:
+        #     print("This letter is not in the word") 
         index = index+2
         
     
